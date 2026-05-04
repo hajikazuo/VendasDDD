@@ -1,10 +1,7 @@
 ﻿using FluentAssertions;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using Vendas.Domain.Common.Enums;
 using Vendas.Domain.Common.Exceptions;
-using Vendas.Domain.Entities;
+using Vendas.Domain.Pedidos.Entities;
+using Vendas.Domain.Pedidos.Enums;
 using Vendas.Domain.Pedidos.Events;
 
 namespace Vendas.Domain.Tests.Pedidos.Entities

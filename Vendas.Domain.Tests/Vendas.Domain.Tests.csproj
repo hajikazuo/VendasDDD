@@ -24,7 +24,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Clientes\Entities\" />
     <Folder Include="Clientes\ValueObjects\" />
   </ItemGroup>
 
