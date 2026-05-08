@@ -1,0 +1,14 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Vendas.Application.Commands.PedidosCommands.IniciarPagamento
+{
+    public sealed class IniciarPagamentoResultDto
+    {
+        public Guid PedidoId { get; init; }
+        public Guid PagamentoId { get; init; }
+        public string StatusPedido { get; init; } = string.Empty;
+        public string StatusPagamento { get; init; } = string.Empty;
+    }
+}
