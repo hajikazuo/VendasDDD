@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Vendas.Domain.Clientes.Entities;
+using Vendas.Domain.Clientes;
 
 namespace Vendas.Application.Abstractions.Persistence
 {

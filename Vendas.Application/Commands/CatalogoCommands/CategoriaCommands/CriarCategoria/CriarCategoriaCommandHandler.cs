@@ -1,6 +1,5 @@
 ﻿using Vendas.Application.Abstractions.Persistence;
 using Vendas.Domain.Catalogo;
-using Vendas.Domain.Catalogo.Entities;
 
 
 namespace Vendas.Application.Commands.CatalogoCommands.CategoriaCommands.CriarCategoria;

@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using Vendas.Domain.Catalogo.Entities;
+using Vendas.Domain.Catalogo;
 using Vendas.Domain.Catalogo.Events;
 using Vendas.Domain.Common.Exceptions;
 

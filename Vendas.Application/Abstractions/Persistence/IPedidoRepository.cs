@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Vendas.Domain.Pedidos.Entities;
+using Vendas.Domain.Pedidos;
 
 namespace Vendas.Application.Abstractions.Persistence
 {

@@ -1,6 +1,6 @@
 ﻿using Vendas.Application.Abstractions.Persistence;
 using Vendas.Domain.Catalogo;
-using Vendas.Domain.Catalogo.Entities;
+using Vendas.Domain.Catalogo;
 using Vendas.Domain.Catalogo.ValueObjects;
 using Vendas.Domain.Common.Exceptions;
 using Vendas.Domain.Common.Validations;

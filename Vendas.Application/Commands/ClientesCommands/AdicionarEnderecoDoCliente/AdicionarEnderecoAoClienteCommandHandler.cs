@@ -1,6 +1,5 @@
 ﻿using Vendas.Application.Abstractions.Persistence;
 using Vendas.Domain.Clientes;
-using Vendas.Domain.Clientes.Entities;
 using Vendas.Domain.Common.Validations;
 
 namespace Vendas.Application.Commands.ClientesCommands.AdicionarEnderecoDoCliente;

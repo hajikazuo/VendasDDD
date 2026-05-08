@@ -1,6 +1,5 @@
 ﻿using Vendas.Application.Abstractions.Persistence;
 using Vendas.Domain.Clientes;
-using Vendas.Domain.Clientes.Entities;
 using Vendas.Domain.Clientes.ValueObjects;
 
 namespace Vendas.Application.Commands.ClientesCommands.CriarCliente;

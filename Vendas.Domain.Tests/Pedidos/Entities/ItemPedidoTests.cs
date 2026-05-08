@@ -5,7 +5,7 @@ using System.Runtime.Intrinsics.X86;
 using System.Text;
 using Vendas.Domain.Common.Base;
 using Vendas.Domain.Common.Exceptions;
-using Vendas.Domain.Pedidos.Entities;
+using Vendas.Domain.Pedidos;
 
 namespace Vendas.Domain.Tests.Pedidos.Entities
 {

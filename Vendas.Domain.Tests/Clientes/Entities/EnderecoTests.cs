@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using Vendas.Domain.Clientes.Entities;
+using Vendas.Domain.Clientes;
 using Vendas.Domain.Common.Exceptions;
 
 namespace Vendas.Domain.Tests.Clientes.Entities
