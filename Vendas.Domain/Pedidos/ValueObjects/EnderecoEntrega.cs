@@ -12,16 +12,18 @@ namespace Vendas.Domain.Pedidos.ValueObjects
     {
         public string Cep { get; private set; }
         public string Logradouro { get; private set; }  
+        public string Numero { get; private set; }
         public string Complemento { get; private set; }
         public string Bairro { get; private set; }
         public string Estado { get; private set; }
         public string Cidade { get; private set; }
         public string Pais { get; private set; }
 
-        private EnderecoEntrega(string cep, string logradouro, string complemento, string bairro, string estado, string cidade, string pais) 
+        private EnderecoEntrega(string cep, string logradouro, string numero, string complemento, string bairro, string estado, string cidade, string pais) 
         {
             Guard.AgainstNullOrWhiteSpace(cep, nameof(cep));
             Guard.AgainstNullOrWhiteSpace(logradouro, nameof(logradouro));
+            Guard.AgainstNullOrWhiteSpace(numero, nameof(numero));
             Guard.AgainstNullOrWhiteSpace(bairro, nameof(bairro));
             Guard.AgainstNullOrWhiteSpace(estado, nameof(estado));
             Guard.AgainstNullOrWhiteSpace(cidade, nameof(cidade));
@@ -39,15 +41,16 @@ namespace Vendas.Domain.Pedidos.ValueObjects
             Pais = pais;
         }
 
-        public static EnderecoEntrega Criar(string cep, string logradouro, string complemento, string bairro, string estado, string cidade, string pais)
+        public static EnderecoEntrega Criar(string cep, string logradouro, string numero, string complemento, string bairro, string estado, string cidade, string pais)
         {
-            return new EnderecoEntrega(cep, logradouro, complemento, bairro, estado, cidade, pais);
+            return new EnderecoEntrega(cep, logradouro, numero, complemento, bairro, estado, cidade, pais);
         }
 
         protected override IEnumerable<object> GetEqualityComponents()
         {
             yield return Cep;
             yield return Logradouro;
+            yield return Numero;
             yield return Complemento ?? string.Empty;
             yield return Bairro;
             yield return Estado;
@@ -57,7 +60,7 @@ namespace Vendas.Domain.Pedidos.ValueObjects
 
         public string FormatarEndereco()
         {
-            return $"{Logradouro}, {Complemento} - {Bairro}, {Cidade} - {Estado}, {Pais}, CEP: {Cep}";
+            return $"{Logradouro}, {Numero}, {Complemento} - {Bairro}, {Cidade} - {Estado}, {Pais}, CEP: {Cep}";
         }
     }
 }

@@ -14,7 +14,7 @@ namespace Vendas.Domain.Tests.Pedidos.Entities
     public class PedidoTests
     {
         private static EnderecoEntrega CriarEnderecoValido()
-          => EnderecoEntrega.Criar("12345-000", "Rua A", "Ap 1", "Centro", "SP", "São Paulo", "Brasil");
+          => EnderecoEntrega.Criar("12345-000", "Rua A", "1", "Ap 1", "Centro", "SP", "São Paulo", "Brasil");
 
         private static readonly Guid ClienteIdValido = Guid.NewGuid();
         private static readonly Guid ProdutoIdValido = Guid.NewGuid();
@@ -191,8 +191,7 @@ namespace Vendas.Domain.Tests.Pedidos.Entities
             // Arrange
             var pedido = Pedido.Criar(ClienteIdValido, CriarEnderecoValido());
 
-            //var novoEndereco = new EnderecoEntrega("00000-000", "Nova Rua", "Casa", "Bairro Novo", "RJ", "Rio", "Brasil");
-            var novoEndereco = EnderecoEntrega.Criar("00000-000", "Nova Rua", "Casa", "Bairro Novo", "RJ", "Rio", "Brasil");
+            var novoEndereco = EnderecoEntrega.Criar("00000-000", "Nova Rua", "1", "Casa", "Bairro Novo", "RJ", "Rio", "Brasil");
 
             // Act
             pedido.AtualizarEnderecoEntrega(novoEndereco);
@@ -211,8 +210,7 @@ namespace Vendas.Domain.Tests.Pedidos.Entities
         {
             // Arrange
             var pedido = Pedido.Criar(ClienteIdValido, CriarEnderecoValido());
-            //var novoEndereco = new EnderecoEntrega("00000-000", "Nova Rua", "Casa", "Bairro Novo", "RJ", "Rio", "Brasil");
-            var novoEndereco = EnderecoEntrega.Criar("00000-000", "Nova Rua", "Casa", "Bairro Novo", "RJ", "Rio", "Brasil");
+            var novoEndereco = EnderecoEntrega.Criar("00000-000", "Nova Rua",  "1", "Casa", "Bairro Novo", "RJ", "Rio", "Brasil");
             SetStatusPedido(pedido, status);
 
             // Act
